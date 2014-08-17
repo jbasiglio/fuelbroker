@@ -1,0 +1,38 @@
+{
+  "name": "FuelBroker",
+  "version": "0.0.1",
+  "description": "Realtime Broker",
+  "license": "MIT",
+  "keywords": [
+    "FuelDB",
+    "Node.js",
+    "database",
+    "websocket",
+    "realtime"
+  ],
+  "author": {
+    "name": "Joris Basiglio",
+    "email": "joris.basiglio@wonderfuel.io",
+    "url": "http://wonderfuel.io/"
+  },
+  "homepage": "http://wonderfuel.io/#/fuelbroker/overview",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unnamed38/fuelbroker.git"
+  },
+  "scripts": {
+	"start": "node bin/server.js"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "ws": "*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "bin/server.js"
+}
