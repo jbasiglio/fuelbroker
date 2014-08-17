@@ -1,0 +1,15 @@
+{
+	"hosts": [
+		{
+			"host":"0.0.0.0",
+			"port": 8201
+		},
+		{
+			"ssl":true,
+			"host":"0.0.0.0",
+			"port": 8202,
+			"key":"../conf/key.pem",
+			"cert":"../conf/key-cert.pem"
+		}
+	]
+}
