@@ -29,7 +29,7 @@ var _wsRequestHandle = function(ws) {
 		ws.close();
 	}
 	ws.id = url.query.id;
-	console.log("Connection open: "+ws.id);
+	console.log("Broker connection open with server "+ws.id);
 	ws.onPushed = function(msg) {
 		if(ws.readyState === WS_STATE.CONNECTING){
 			setTimeout(function() {
@@ -50,7 +50,7 @@ var _wsRequestHandle = function(ws) {
 		console.log("Error: "+message);
 	});
 	ws.on('close', function(code, message) {
-		console.log("Connection lost: "+ws.id);
+		console.log("Broker connection lost with server "+ws.id);
 		delete servers[ws.id];
 	});
 	servers[ws.id] = ws;
